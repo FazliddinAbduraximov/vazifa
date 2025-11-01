@@ -1,13 +1,13 @@
-import pl1 from '../assets/yangi/pl1.png'
-import pl2 from '../assets/yangi/pl2.png'
-import pl3 from '../assets/yangi/pl3.png'
-import pl4 from '../assets/yangi/pl4.png'
-import pl5 from '../assets/yangi/pl5.png'
+import pl1 from '../assets/audio/pl1.png'
+import pl2 from '../assets/audio/pl2.png'
+import pl3 from '../assets/audio/pl3.png'
+import pl4 from '../assets/audio/pl4.png'
+import pl5 from '../assets/audio/pl5.png'
 import star from '../assets/star.svg'
 import naush from '../assets/naush.svg'
 import book from '../assets/book.svg'
 
-export const YANGI=[
+export const AUDIO=[
     {
         id:1,
         img:pl1,
