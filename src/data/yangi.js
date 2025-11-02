@@ -10,7 +10,7 @@ import book from '../assets/book.svg'
 export const YANGI=[
     {
         id:1,
-        img:pl1,
+        img:pl5,
         title:1984,
         janr:"SIYOSAT, FANTASTIKA",
         star,
@@ -20,7 +20,7 @@ export const YANGI=[
     },
     {
         id:2,
-        img:pl2,
+        img:pl1,
         title:"Rich dad poor dad",
         janr:"SIYOSAT, FANTASTIKA",
         star,
@@ -31,7 +31,7 @@ export const YANGI=[
     {
         id:3,
         title:"Код 8",
-        img:pl3,
+        img:pl2,
         janr:"SIYOSAT, FANTASTIKA",
         star,
         reyting:4.7,
@@ -41,7 +41,7 @@ export const YANGI=[
     {
         id:4,
         title:"Даниел КИЗ",
-        img:pl4,
+        img:pl3,
         janr:"SIYOSAT, FANTASTIKA",
         star,
         reyting:4.7,
@@ -51,7 +51,7 @@ export const YANGI=[
     {
         id:5,
         title:"Бепарволикнинг но...",
-        img:pl5,
+        img:pl4,
         janr:"SIYOSAT, FANTASTIKA",
         star,
         reyting:4.7,

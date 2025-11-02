@@ -9,7 +9,7 @@ import book from '../assets/book.svg'
 
 export const AUDIO=[
     {
-        id:1,
+        id:6,
         img:pl1,
         title:1984,
         janr:"SIYOSAT, FANTASTIKA",
@@ -19,7 +19,7 @@ export const AUDIO=[
         book
     },
     {
-        id:2,
+        id:7,
         img:pl2,
         title:"Rich dad poor dad",
         janr:"SIYOSAT, FANTASTIKA",
@@ -29,7 +29,7 @@ export const AUDIO=[
         book
     },
     {
-        id:3,
+        id:8,
         title:"Код 8",
         img:pl3,
         janr:"SIYOSAT, FANTASTIKA",
@@ -39,7 +39,7 @@ export const AUDIO=[
         book
     },
     {
-        id:4,
+        id:9,
         title:"Даниел КИЗ",
         img:pl4,
         janr:"SIYOSAT, FANTASTIKA",
@@ -49,7 +49,7 @@ export const AUDIO=[
         book
     },
     {
-        id:5,
+        id:10,
         title:"Бепарволикнинг но...",
         img:pl5,
         janr:"SIYOSAT, FANTASTIKA",
