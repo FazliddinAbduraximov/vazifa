@@ -16,7 +16,7 @@ export const Header = () => {
               <Link to={'/'}>
                 <img src={logo} alt="logo" />
               </Link>
-              <SearchBar/>
+              <SearchBar />
             </div>
           </div>
           <div className='flex gap-5'>
@@ -25,10 +25,12 @@ export const Header = () => {
               <p>Ўз</p>
               <img src={strelka} alt="" />
             </button>
-            <button className='w-[151px] px-6 py-3 flex gap-4 rounded-[14px] bg-[#3f51b5]'>
-              <img className='w-6 h-6' src={person} alt="" />
-              <p>Кириш</p>
-            </button>
+            <Link to={'/profile'}>
+              <button className='w-[151px] px-6 py-3 flex gap-4 rounded-[14px] bg-[#3f51b5]'>
+                <img className='w-6 h-6' src={person} alt="" />
+                <p>Кириш</p>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

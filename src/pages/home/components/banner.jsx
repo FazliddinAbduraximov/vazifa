@@ -40,9 +40,9 @@ export const Banner = () => {
                 }}>
                     <div className='flex flex-col items-center'>
                         <h1 className=' text-2xl font-bold mt-8 mb-5 text-white text-center'>Китоб ўқишни ёқтирасизми?</h1>
-                        <p className='text-2xl text-[18px] mt-8 mb-5 text-white text-center'>Унда пулингизни тежаш учун ўзингиз йоқтирган рукнга обуна бўлинг</p>
+                        <p className='text-2xl text-[18px] mt-8 text-white text-center'>Унда пулингизни тежаш учун ўзингиз йоқтирган рукнга обуна бўлинг</p>
                     </div>
-                    <button className='w-full bg-amber-50 flex gap-[18px] rounded-[18px] px-6 py-[7px]'><img src={like} alt="img" /> <p className='text-[18px] font-bold'>Обуна бўлиш</p></button>
+                    <button className='w-full mt-[77px] bg-amber-50 flex gap-[18px] rounded-[18px] px-6 py-[7px]'><img src={like} alt="img" /> <p className='text-[18px] font-bold'>Обуна бўлиш</p></button>
                 </div>
             </div>
         </div>
