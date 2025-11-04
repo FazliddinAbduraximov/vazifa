@@ -8,7 +8,7 @@ export default function ProductSection({ title, products }) {
             <Typography variant="h5" fontWeight="bold" mb={2}>
                 {title}
             </Typography>
-            <Grid container spacing={3} mb={5}>
+            <Grid container spacing={3} mb={5} justifyContent="space-between">
                 {products.map((p) => (
                     <Grid item xs={12} sm={6} md={3} key={p.id}>
                         <ProductCard product={p} />
