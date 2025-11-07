@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis qui illum, laudantium delectus illo quisquam consequatur corrupti? Provident laborum, ipsam hic temporibus adipisci, aliquam maiores, odit tenetur sit eaque reprehenderit.</h1>
     </>
   )
 }
