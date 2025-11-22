@@ -7,7 +7,13 @@ import { CardSkleton } from "@/components/card/card-skleton"
 export const Home = () => {
 
     const {data,isLoading,isError} =useGetUserList()
-
+    if(isError) {
+        return (
+        <div className="container">
+            <h1>Xatolik yuz berdi</h1>
+        </div>
+    )
+    }
     return (
         <div className="container">
             <div>
