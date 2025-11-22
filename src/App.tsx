@@ -1,0 +1,19 @@
+import { Route, Routes } from "react-router-dom"
+import { MainLayout } from "./layout/main-layout"
+import { Home } from "./pages/home/home"
+import { ProductDetail } from "./pages/detail/Product-detail"
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="product" element={<ProductDetail />} />
+        </Route>
+      </Routes>
+    </>
+  )
+}
+
+export default App
