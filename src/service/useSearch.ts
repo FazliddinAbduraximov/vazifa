@@ -2,10 +2,9 @@ import { request } from '@/config/request'
 import type { GetInterface } from '@/pages/type/interface'
 import { useQuery } from '@tanstack/react-query'
 
-export const useFindProduct = (id:string) => {
+export const useSearch = () => {
   return useQuery({
-    queryKey:['product',id],
-    queryFn:()=>request.get<GetInterface>(`/todos/${id}`).then((res)=>res.data)
+    queryKey:['search_item'],
+    queryFn:()=>request.get<GetInterface[]>('/todos').then((res)=>res.data)
   })
-
 }

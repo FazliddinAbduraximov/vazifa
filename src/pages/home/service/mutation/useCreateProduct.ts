@@ -5,6 +5,6 @@ import { useMutation } from "@tanstack/react-query"
 
 export const useCreateProduct = () => {
   return useMutation({
-    mutationFn:(data:PostInterface)=>request.post('/Boks',data).then((res)=>res.data),
+    mutationFn:(data:PostInterface)=>request.post('/todos',data).then((res)=>res.data),
   })
 }
