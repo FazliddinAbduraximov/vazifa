@@ -17,7 +17,7 @@ function App() {
           <Route path="admin">
             <Route  index element={<Statistics />}/>
             {
-              adminRouter.map(({path, page:Page})=> <Route key={path} path={path} element={<Page />}/>)
+              adminRouter.map(({path,page:Page})=> <Route key={path} path={path} element={<Page />}/>)
             }
           </Route>
           <Route path="teacher">
