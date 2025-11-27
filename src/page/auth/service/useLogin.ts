@@ -4,6 +4,8 @@ import type { LoginResponce, LoginT } from "../typs"
 
 export const useLogin = () => {
   return useMutation({
-    mutationFn:(data:LoginT)=>request.post<LoginResponce>('/auth/signin',data).then((res)=>res.data)
+    mutationFn:(data:LoginT)=>request.post<LoginResponce>('/auth/signin',data,{
+      withCredentials:true,
+    }).then((res)=>res.data)
   })
 }

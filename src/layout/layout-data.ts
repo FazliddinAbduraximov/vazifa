@@ -4,12 +4,12 @@ export const links = {
     admin: [
         {
             title: "Home",
-            url: "#",
+            url: "/app/admin",
             icon: Home,
         },
         {
-            title: "Inbox",
-            url: "#",
+            title: "teachers",
+            url: "/app/admin/teachers",
             icon: Inbox,
         },
         {
