@@ -4,13 +4,14 @@ import { AppSidebar } from "./navbar"
 import Cookies from "js-cookie"
 
 export const MainLayout = () => {
-  const token = Cookies.get("token")
-  const role = Cookies.get("role")
-  const roles = ['admin','teacher','student',];
-  console.log(!role || !token || !roles.includes(role))
-  if (!role || !token || !roles.includes(role)) {
-    return <Navigate replace to={'/'}/>
-  }
+  // const token = Cookies.get("token")
+  // const role = Cookies.get("role")
+  // const roles = ['admin','teacher','student',];
+  // console.log(!role || !token || !roles.includes(role))
+  // if (!role || !token || !roles.includes(role)) {
+  //   return <Navigate replace to={'/'}/>
+  // }
+  const role='admin'
   return (
     <SidebarProvider className="bg-[#F8F7F0]">
       <AppSidebar role={role} />

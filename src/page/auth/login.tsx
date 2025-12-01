@@ -45,7 +45,7 @@ const formSchema = z.object({
 
 export const Login = () => {
     const { mutate, isPending } = useLogin()
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -55,21 +55,21 @@ export const Login = () => {
         },
     })
 
-   const onSubmit = (data: z.infer<typeof formSchema>) => {
-    mutate(data, {
-        onSuccess: (res) => {
-            Cookie.set("token",res.data.token)
-            Cookie.set("role",res.data.user.role.toLowerCase())
-            toast.success(res.message.uz,{
-                position:"bottom-right"
-            })
-             navigate(`/app/${res.data.user.role.toLowerCase()}`)
-        },
-        onError: (error) => {
-            console.log(error)
-        }
-    })
-}
+    const onSubmit = (data: z.infer<typeof formSchema>) => {
+        mutate(data, {
+            onSuccess: (res) => {
+                Cookie.set("token", res.data.token)
+                Cookie.set("role", res.data.user.role.toLowerCase())
+                toast.success(res.message.uz, {
+                    position: "bottom-right"
+                })
+                navigate(`/app/${res.data.user.role.toLowerCase()}`)
+            },
+            onError: (error) => {
+                console.log(error)
+            }
+        })
+    }
 
 
     return (
@@ -91,9 +91,9 @@ export const Login = () => {
                                                 <SelectValue placeholder="Role" />
                                             </SelectTrigger>
                                             <SelectContent>
-                                                <SelectItem value="admin">admin</SelectItem>
-                                                <SelectItem value="teacher">teacher</SelectItem>
-                                                <SelectItem value="student">student</SelectItem>
+                                                <SelectItem value="Admin">admin</SelectItem>
+                                                <SelectItem value="Teacher">teacher</SelectItem>
+                                                <SelectItem value="Student">student</SelectItem>
                                             </SelectContent>
                                         </Select>
                                     </FormControl>
